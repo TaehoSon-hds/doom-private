@@ -1,7 +1,7 @@
-(setq user-full-name "JJ Kim"
-      user-mail-address "jj@haedosa.xyz")
+(setq user-full-name "Taeho Son"
+      user-mail-address "sth0622@haedosa.xyz")
 
-(setq default-input-method "korean-hangul3f")
+(setq default-input-method "korean-hangul")
 
 (setq-default backup-directory-alist '(("" . "~/.backup"))
               make-backup-files t
