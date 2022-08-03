@@ -384,8 +384,8 @@ yaml              ; JSON, but readable
 
 #+begin_src emacs-lisp
 
-(setq user-full-name "JJ Kim"
-      user-mail-address "jj@haedosa.xyz")
+(setq user-full-name "Taeho Son"
+      user-mail-address "sth0622@haedosa.xyz")
 
 #+end_src
 ** Hangul
