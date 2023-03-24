@@ -4,17 +4,17 @@
 ;; Press 'K' on a module to view its documentation, and 'gd' to browse its directory.
 
 (doom! :completion
-       
+
        (company                     ; the ultimate code completion backend
         +childframe)                ; ... when your children are better than you
        (vertico +icons)             ; the search engine of the future
        ;;helm              ; the *other* search engine for love and life
        ;;ido               ; the other *other* search engine...
        ;;ivy               ; a search engine for love and life
-       
+
 
        :ui
-       
+
        ;;deft              ; notational velocity for Emacs
        doom              ; what makes DOOM look the way it does
        doom-dashboard    ; a nifty splash screen for Emacs
@@ -38,14 +38,14 @@
        window-select     ; visually switch windows
        workspaces        ; tab emulation, persistence & separate workspaces
        zen               ; distraction-free coding or writing
-       
+
 
        :editor
-       
+
        (evil +everywhere); come to the dark side, we have cookies
        file-templates    ; auto-snippets for empty files
        fold              ; (nigh) universal code folding
-       ;;(format +onsave)  ; automated prettiness
+       (format +onsave)  ; automated prettiness
        ;;god               ; run Emacs commands without modifier keys
        ;;lispy             ; vim for lisp, for people who don't like vim
        multiple-cursors  ; editing in many places at once
@@ -54,34 +54,34 @@
        ;;rotate-text       ; cycle region at point between text candidates
        snippets          ; my elves. They type so I don't have to
        ;;word-wrap         ; soft wrapping with language-aware indent
-       
+
 
        :emacs
-       
+
        (dired +icons)    ; making dired pretty [functional]
        electric          ; smarter, keyword-based electric-indent
        (ibuffer +icons)  ; interactive buffer management
        undo              ; persistent, smarter undo for your inevitable mistakes
        vc                ; version-control and Emacs, sitting in a tree
-       
+
 
        :term
-       
+
        eshell            ; the elisp shell that works everywhere
        ;;shell             ; simple shell REPL for Emacs
        term              ; basic terminal emulator for Emacs
        vterm             ; the best terminal emulation in Emacs
-       
+
 
        :checkers
-       
+
        syntax              ; tasing you for every semicolon you forget
        (:if (executable-find "aspell") spell) ; tasing you for misspelling mispelling
        (:if (executable-find "languagetool") grammar) ; tasing grammar mistake every you make
-       
+
 
        :tools
-       
+
        ;;ansible
        (debugger +lsp)   ; FIXME stepping through code, to help you add bugs
        direnv
@@ -105,15 +105,15 @@
        ;;tmux              ; an API for interacting with tmux
        ;;upload            ; map local to remote projects via ssh/ftp
        tree-sitter       ; Syntax and Parsing sitting in a tree
-       
+
 
        :os
-       
+
        (:if IS-MAC macos) ; improve compatibility with macOS
-       
+
 
        :lang
-       
+
        (agda +local)          ; types of types of types of types...
        ;;beancount         ; mind the GAAP
        cc                ; C > C++ == 1
@@ -192,27 +192,27 @@
        ;;web               ; the tubes
        yaml              ; JSON, but readable
        ;;zig               ; C, but simpler
-       
+
 
        :email
-       
+
        ;;(mu4e +gmail)
        ;;notmuch
        ;;(wanderlust +gmail)
-       
+
 
        :app
-       
+
        calendar
        ;;emms
        ;;everywhere        ; *leave* Emacs!? You must be joking
        ;;irc               ; how neckbeards socialize
        ;;(rss +org)        ; emacs as an RSS reader
        ;;twitter           ; twitter client https://twitter.com/vnought
-       
+
 
        :config
-       
+
        literate
        (default +bindings +smartparens)
        )
